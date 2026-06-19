@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (response.ok) {
         showMessage(result.message, "success");
-        fetchActivities();
+        await fetchActivities();
       } else {
         showMessage(result.detail || "Unable to remove participant", "error");
       }
